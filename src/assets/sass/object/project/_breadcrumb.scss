@@ -1,0 +1,45 @@
+.breadcrumb {
+	margin: 0 auto;
+	padding: 22px 0 25px 0;
+	width: 1000px;
+
+	@include mq(sp) {
+		padding: 12px 0 16px 20px;
+		box-sizing: border-box;
+		width: 100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		overflow-scrolling: touch;
+		overflow: auto;
+		white-space: nowrap;
+	}
+
+	&__list {
+		display: flex;
+
+		&__item {
+			margin-right: 5px;
+
+			a {
+				color: $color-font;
+				font-size: 1.3rem;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+
+			.gt {
+				color: $color-font;
+			}
+
+			&:last-child {
+
+				.gt {
+					display: none;
+				}
+			}
+		}
+	}
+}

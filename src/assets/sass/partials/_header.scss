@@ -1,0 +1,39 @@
+.site-header {
+    background-color: $color-white;
+    height: 94px;
+
+    @include mq(sp) {
+        height: 61px;
+    }
+
+    &__inner {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 29px;
+        width: 480px;
+        line-height: 1;
+
+        @include mq(sp) {
+            height: 17px;
+            width: 282px;
+        }
+
+        img {
+            height: 29px;
+            width: 480px;
+
+            @include mq(sp) {
+                height: 17px;
+                width: 282px;
+            }
+        }
+    }
+}

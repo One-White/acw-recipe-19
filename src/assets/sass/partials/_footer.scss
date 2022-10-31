@@ -1,0 +1,24 @@
+.site-footer {
+    background-color: $color-gray-dark;
+    padding: 25px 0;
+    margin-top: 35px;
+
+    @include mq(sp) {
+        padding: 12px 0;
+        margin-top: 30px;
+    }
+
+    &__inner {
+
+        p {
+            color: $color-white;
+            text-align: center;
+            font-size: 1.3rem;
+
+            @include mq(sp) {
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+        }
+    }
+}

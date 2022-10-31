@@ -1,0 +1,150 @@
+.parts-accordion {
+
+	@include mq(sp) {
+		margin: 40px 20px 0 20px;
+	}
+
+	.toggle {
+		margin-top: 30px;
+
+		@include mq(sp) {
+			margin-top: 20px;
+		}
+
+		dt,
+		dd {
+
+			> div {
+				position: relative;
+
+				&::before {
+					font-size: 2rem;
+					position: absolute;
+
+					@include mq(sp) {
+						font-size: 1.8rem;
+					}
+				}
+
+				span {
+					display: table-cell;
+					padding-left: 44px;
+
+					@include mq(sp) {
+						padding-left: 30px;
+					}
+				}
+			}
+		}
+
+		&__title {
+			border-radius: 10px;
+			padding: 30px 90px 30px 35px;
+			background-color: #eeeeee;
+			position: relative;
+
+			@include mq(sp) {
+				padding: 20px 50px 20px 20px;
+			}
+
+			> div {
+				font-weight: 700;
+
+				&::before {
+					content: "Q";
+					color: #dd0000;
+					top: 50%;
+					transform: translate(0%, -50%);
+				}
+
+				span {
+					font-size: 2rem;
+
+					@include mq(sp) {
+						font-size: 1.8rem;
+					}
+				}
+			}
+
+			.arrow {
+				position: absolute;
+				right: 40px;
+				top: 50%;
+				transform: translate(0%, -50%);
+				width: 22px;
+				height: auto;
+				transition: all 0.2s ease;
+
+				@include mq(sp) {
+					right: 20px;
+					width: 17px;
+				}
+
+				&::before,
+				&::after {
+					content: "";
+					background-color: #000000;
+					display: block;
+					height: 1px;
+					width: 13px;
+					position: absolute;
+
+					@include mq(sp) {
+						width: 10px;
+					}
+				}
+
+				&::before {
+					left: 0;
+					transform: rotate(-315deg);
+				}
+
+				&::after {
+					right: 0;
+					transform: rotate(315deg);
+				}
+			}
+
+			&.selected {
+
+				&.toggle__title {
+					border-radius: 10px 10px 0 0;
+				}
+
+				.arrow {
+					transform-origin: 50% 50%;
+					transform: rotate(-180deg);
+				}
+			}
+		}
+
+		&__content {
+			background-color: #000000;
+			border-radius: 0 0 10px 10px;
+			display: none;
+			padding: 30px 35px;
+
+			@include mq(sp) {
+				padding: 20px 20px 30px 20px;
+			}
+
+			> div {
+				line-height: 1.7;
+
+				&::before {
+					content: "A";
+					color: #ffffff;
+				}
+
+				span {
+					color: #ffffff;
+					font-size: 2rem;
+
+					@include mq(sp) {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+}

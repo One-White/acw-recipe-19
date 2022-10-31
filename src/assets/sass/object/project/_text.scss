@@ -1,0 +1,44 @@
+.text {
+	font-size: 1.4rem;
+	line-height: $line-height-basic;
+
+	&.-c {
+		text-align: center;
+	}
+
+	&.-l {
+		text-align: left;
+	}
+
+	&.-r {
+		text-align: right;
+	}
+}
+
+.palt {
+	font-feature-settings: "palt";
+}
+.palt-20 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.02em;
+}
+.palt-40 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.04em;
+}
+.palt-60 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.06em;
+}
+.palt-80 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.08em;
+}
+.palt-100 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.1em;
+}
+.palt-120 {
+	font-feature-settings: "palt";
+	letter-spacing: 0.12em;
+}

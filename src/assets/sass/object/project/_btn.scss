@@ -1,0 +1,27 @@
+/*
+/* Button
+/*
+----------------------------------------------------------------- */
+.btn-back {
+	height: 45px;
+	width: 200px;
+	margin: 50px auto 0;
+	text-align: center;
+
+	@include mq(sp) {
+		margin: 40px auto 0;
+	}
+
+	a {
+		background-color: $color-main;
+		color: $color-white;
+		font-weight: 700;
+		line-height: 45px;
+		display: block;
+		transition: all 0.3s ease;
+
+		&:hover {
+			opacity: .6;
+		}
+	}
+}

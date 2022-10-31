@@ -1,0 +1,266 @@
+.ml {
+
+	&_10 {
+		margin-left: 10px;
+	}
+
+	&_20 {
+		margin-left: 20px;
+	}
+
+	&_30 {
+		margin-left: 30px;
+	}
+
+	&_40 {
+		margin-left: 40px;
+	}
+
+	&_50 {
+		margin-left: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			margin: 0;
+		}
+	}
+}
+
+.mt {
+
+	&_10 {
+		margin-top: 10px;
+	}
+
+	&_20 {
+		margin-top: 20px;
+	}
+
+	&_30 {
+		margin-top: 30px;
+	}
+
+	&_40 {
+		margin-top: 40px;
+	}
+
+	&_50 {
+		margin-top: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			margin: 0;
+		}
+	}
+}
+
+.mr {
+
+	&_10 {
+		margin-right: 10px;
+	}
+
+	&_20 {
+		margin-right: 20px;
+	}
+
+	&_30 {
+		margin-right: 30px;
+	}
+
+	&_40 {
+		margin-right: 40px;
+	}
+
+	&_50 {
+		margin-right: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			margin: 0;
+		}
+	}
+}
+
+.mb {
+
+	&_10 {
+		margin-bottom: 10px;
+	}
+
+	&_20 {
+		margin-bottom: 20px;
+	}
+
+	&_30 {
+		margin-bottom: 30px;
+	}
+
+	&_40 {
+		margin-bottom: 40px;
+	}
+
+	&_50 {
+		margin-bottom: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			margin: 0;
+		}
+	}
+}
+
+
+
+
+.pl {
+
+	&_10 {
+		padding-left: 10px;
+	}
+
+	&_20 {
+		padding-left: 20px;
+	}
+
+	&_30 {
+		padding-left: 30px;
+	}
+
+	&_40 {
+		padding-left: 40px;
+	}
+
+	&_50 {
+		padding-left: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			padding: 0;
+		}
+	}
+}
+
+.pt {
+
+	&_10 {
+		padding-top: 10px;
+	}
+
+	&_20 {
+		padding-top: 20px;
+	}
+
+	&_30 {
+		padding-top: 30px;
+	}
+
+	&_40 {
+		padding-top: 40px;
+	}
+
+	&_50 {
+		padding-top: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			padding: 0;
+		}
+	}
+}
+
+.pr {
+
+	&_10 {
+		padding-right: 10px;
+	}
+
+	&_20 {
+		padding-right: 20px;
+	}
+
+	&_30 {
+		padding-right: 30px;
+	}
+
+	&_40 {
+		padding-right: 40px;
+	}
+
+	&_50 {
+		padding-right: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			padding: 0;
+		}
+	}
+}
+
+.pb {
+
+	&_10 {
+		padding-bottom: 10px;
+	}
+
+	&_20 {
+		padding-bottom: 20px;
+	}
+
+	&_30 {
+		padding-bottom: 30px;
+	}
+
+	&_40 {
+		padding-bottom: 40px;
+	}
+
+	&_50 {
+		padding-bottom: 50px;
+	}
+
+	&_10,
+	&_20,
+	&_30,
+	&_40,
+	&_50 {
+		@include mq(sp) {
+			padding: 0;
+		}
+	}
+}

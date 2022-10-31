@@ -1,0 +1,231 @@
+/*
+/* Top
+/*
+----------------------------------------------------------------- */
+
+main {
+    font-size: 1.45rem;
+    font-family: "メイリオ", Meiryo,Helvetica,"ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic Pro", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1.8;
+    letter-spacing: -0.01em;
+
+    @include mq(sp) {
+        font-size: 1.3rem;
+        line-height: 1.65;
+        letter-spacing: 0.03em;
+    }
+}
+
+.recipe {
+
+    &__wrap {
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 710px;
+
+        @include mq(sp) {
+            margin-top: 0;
+            margin-left: 20px;
+            margin-right: 20px;
+            width: auto;
+        }
+    }
+
+    &__heading {
+
+        @include mq(sp) {
+            width: 100%;
+        }
+    }
+
+    &__desc {
+        background-color: #fdfaf4;
+        margin-top: 27px;
+        padding: 15px 20px 13px 20px;
+
+        @include mq(sp) {
+            margin-top: 20px;
+            padding: 10px 10px 4px 10px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+    }
+
+    &__detail {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 47px;
+
+        @include mq(sp) {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .photo {
+            width: 312px;
+
+            @include mq(sp) {
+                margin-left: auto;
+                margin-right: auto;
+                width: 216px;
+            }
+        }
+
+        .text {
+            width: 375px;
+
+            @include mq(sp) {
+                margin-top: 28px;
+                width: auto;
+            }
+
+            .title {
+                position: relative;
+                border-bottom: 2px solid #e8b12d;
+                margin-top: -2px;
+                padding-bottom: 3px;
+
+                h3 {
+                    color: #6e421b;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    line-height: 1.4;
+
+                    @include mq(sp) {
+                        font-size: 1.45rem;
+                    }
+                }
+
+                .tag {
+                    position: absolute;
+                    right: 10px;
+                    top: -16px;
+
+                    @include mq(sp) {
+                        right: 0;
+                        top: -16px;
+                        width: 37px;
+                    }
+                }
+            }
+
+            .ingredient {
+                margin-left: 4px;
+                margin-top: 12px;
+
+                @include mq(sp) {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    &__make {
+        background-color: #fdf7e8;
+        margin-top: 30px;
+        padding: 20px 15px 10px 15px;
+
+        @include mq(sp) {
+            padding: 15px 10px 13px 10px;
+        }
+
+        .title {
+            border-bottom: 1px solid #e39800;
+            margin-top: -2px;
+            padding-bottom: 3px;
+            margin-bottom: 20px;
+
+            @include mq(sp) {
+                margin-bottom: 7px;
+            }
+
+            h3 {
+                color: #e39800;
+                font-size: 1.8rem;
+                font-weight: bold;
+                line-height: 1.4;
+                padding-left: 10px;
+
+                @include mq(sp) {
+                    font-size: 1.5rem;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .list {
+
+            li {
+                display: flex;
+                justify-content: start;
+                align-items: flex-start;
+                padding: 10px 5px 5px 5px;
+                border-bottom: 1px dotted #999999;
+
+                @include mq(sp) {
+                    padding: 13px 0 10px 0;
+                }
+
+                &:first-child {
+                    padding: 0 0 5px 5px;
+
+                    @include mq(sp) {
+                        padding: 5px 0 8px 0;
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                    padding: 10px 5px 0 5px;
+
+                    @include mq(sp) {
+                        padding: 12px 0 0 0;
+                    }
+                }
+
+                .num {
+                    position: relative;
+                    top: -3px;
+                    width: 26px;
+
+                    @include mq(sp) {
+                        top: -1px;
+                        width: 10%;
+                        max-width: 21px;
+                    }
+                }
+
+                .text {
+                    display: inline;
+                    line-height: 1.75;
+                    letter-spacing: 0.03em;
+                    padding-left: 9px;
+                    width: 610px;
+
+                    @include mq(sp) {
+                        line-height: 1.7;
+                        font-size: 1.3rem;
+                        width: 90%;
+                    }
+
+                    .text_num {
+                        display: inline-block;
+                        position: relative;
+                        top: -1px;
+                        margin: 0 2px;
+                        vertical-align: middle;
+
+                        @include mq(sp) {
+                            margin: 0 4px 0 2px;
+                            top: -1px;
+                            width: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
